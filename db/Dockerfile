@@ -21,7 +21,7 @@ RUN echo 'Asia/Tokyo' > /etc/timezone
 ENV TZ Asia/Tokyo
 
 # 5. MySQL(Client)のインストール
-RUN apt -y install mysql-client-8.0
+RUN apt update && apt -y install mysql-client-8.0
 
 # 6. MySQL(Server)のインストール
 RUN apt -y install mysql-server-8.0
